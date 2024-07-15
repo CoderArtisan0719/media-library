@@ -1,0 +1,25 @@
+{
+    "name": "media-library",
+    "version": "1.0.0",
+    "description": "Media Library Application",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\"",
+        "test": "concurrently \"npm run test --prefix backend\" \"npm run test --prefix frontend\"",
+        "lint": "concurrently \"npm run lint --prefix backend\" \"npm run lint --prefix frontend\"",
+        "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "@capacitor/android": "^6.1.0",
+        "@capacitor/cli": "^6.1.0",
+        "@capacitor/core": "^6.1.0",
+        "@capacitor/filesystem": "^6.0.0",
+        "@capacitor/ios": "^6.1.0",
+        "concurrently": "^7.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^4.0.0"
+    }
+}
